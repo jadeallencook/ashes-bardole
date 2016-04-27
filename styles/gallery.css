@@ -1,0 +1,114 @@
+.filters{
+	margin:20px 0 40px 0;
+}
+.gallery.style_2{
+	background:#222;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+.gallery.style_2 .container-fluid .gallery_item,.gallery.style_2 .container .gallery_item,.gallery.style_3 .gallery_item{
+	padding:10px;
+}
+.gallery.style_3 .gallery_item > div{
+	border:1px solid #222;
+}
+.gallery.style_2 h2{
+	color:#FFF;
+}
+.gallery_item{
+	padding:0;
+}
+.gallery_item > div{
+	overflow:hidden;
+	width:100%;
+	position:relative;
+}
+.gallery_item div > .gallery_item{
+	position:relative;
+	background:#FFF;
+	-moz-transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-ms-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+}
+.gallery_item div > img{
+	max-width:100%;
+	top:0;
+	position:relative;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-ms-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	transition:all .5s ease;
+}
+.gallery_item div:hover > img{
+	/*transform:scale(1.3,1.3) rotate(-5deg);*/
+	transform:scale(1.3,1.3);
+	-moz-transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-ms-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	transition:all .5s ease;
+}
+.gallery_item div > .inner{
+	display:block;
+	position:absolute;
+	background: rgba(0,102,153,0);
+	width:90%;
+	height:90%;
+	left:5%;
+	bottom:100%;
+	opacity:0;
+	color:#FFF;
+	border:1px solid #333;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	-ms-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	transition:all .5s ease;
+}
+.gallery_item div:hover .inner{
+	bottom:5%;
+	opacity:1;
+}
+.gallery_item div > .inner > div{
+	padding:20px;
+	width:100%;
+	height:100%;
+}
+.gallery_item div > .inner h3{
+	color:#222;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:normal;
+	font-family: 'Raleway', sans-serif;
+	font-size:18px;
+	position:relative;
+	top:calc(50% - 60px);
+}
+.gallery_item div > .inner ul{
+	margin:0 auto !important;
+	width:90px;
+	position:relative;
+	top:calc(50% - 65px);
+}
+.gallery_item div > .inner ul li{
+	float:left;
+	margin:0 10px
+}
+.gallery_item div > .inner ul li a{
+	font-size:25px;
+	width:25px;
+	display:block;
+	color:#222;
+	-moz-transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	transition:all .3s ease;
+}
+@media screen and (max-width:767px){
+.gallery_item h4{
+	font-size:14px;
+}
+}

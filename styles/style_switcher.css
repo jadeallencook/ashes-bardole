@@ -1,0 +1,87 @@
+@media screen and (max-width:767px){
+.style_switcher{
+	display:none;
+}
+}
+.style_switcher{
+	width:52px;
+	height:333px;
+	position:fixed;
+	z-index:9999;
+	top:150px;
+	left:-52px;
+	padding:10px 10px 10px 10px;
+	border:1px solid #000;
+	color:#FFF;
+	background:rgba(0,0,0,.7);
+	border-radius:0 5px 5px 0;
+}
+.style_switcher.open{
+	left:-1px;
+}
+.open_switcher{
+	position:absolute;
+	top:30px;
+	right:-51px;
+	font-size:25px;
+	line-height:30px;
+	text-align:center;
+	width:50px;
+	height:atuo;
+	z-index:9999999999;
+	background:rgba(255,255,255,.7);
+	border-radius:0 5px 5px 0;
+	border-left:0;
+	padding:10px;
+	cursor:pointer;
+}
+.style_switcher > div{
+	background:#FFF;
+	color:#333;
+	padding:3px 8px;
+	margin:10px 10px 0 0;
+	border-radius:2px;
+	float:left;
+	cursor:pointer;
+}
+.style_switcher .predefine_colors li{
+	float:left;
+	margin:0 10px 10px 0;
+	list-style-type:none;
+	text-decoration:none;
+}
+.style_switcher .predefine_colors li div{
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	border-radius:50%;
+	border:3px solid #FFF;
+}
+.style_switcher .predefine_colors li div.active{
+	box-shadow:0 0 7px #000 inset;
+	
+}
+#color_1{
+	background:#f97575;
+}
+#color_2{
+	background:#ff9966;
+}
+#color_3{
+	background:#f2e183;
+}
+#color_4{
+	background:#e599c1;
+}
+#color_5{
+	background:#b092d9;
+}
+#color_6{
+	background:#4ab1c8;
+}
+#color_7{
+	background:#00b7c3;
+}
+#color_8{
+	background:#5dc0af;
+}

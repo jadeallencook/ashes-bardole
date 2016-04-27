@@ -1,0 +1,97 @@
+.skills{
+	margin:40px 0;
+	max-width:600px;
+	width:100%;
+}
+.skills .skill {
+	position: relative;
+	margin-top: 35px;
+	padding-bottom: 15px;
+}
+.skills .skill:first-child {
+	margin-top: 0;
+}
+.skills .skill .skill-title {
+	font-size: 16px;
+}
+.skills .skill .skill-title i{
+	padding-right:10px;
+}
+.skills .skill .skill-status {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.skills h2, .skills h3 {
+	margin-bottom: -30px;
+}
+.skills .skill .progress-bar {
+	width: 100%;
+	height: 12px;
+	background: #222;
+	box-shadow:none;
+	margin-top: 8px;
+}
+.skills .skill .progress-bar .current-progress {
+	margin-top:3px;
+	height: 9px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.skills .skill .progress-bar .current-progress .bar {
+	width: 100%;
+	height: 100%;
+}
+.setWideToNone {
+	width: 0 !important;
+}
+.widthAnim {
+	-webkit-animation: widthInc 2s;
+	-moz-animation: widthInc 2s;
+	-ms-animation: widthInc 2s;
+	-o-animation: widthInc 2s;
+	animation: widthInc 2s;
+}
+/* All Animation keyframes */
+@-webkit-keyframes widthInc {
+ 0% {
+ width: 0;
+}
+ 100% {
+ width: 100%;
+}
+}
+@-moz-keyframes widthInc {
+ 0% {
+ width: 0;
+}
+ 100% {
+ width: 100%;
+}
+}
+@-ms-keyframes widthInc {
+ 0% {
+ width: 0;
+}
+ 100% {
+ width: 100%;
+}
+}
+@-o-keyframes widthInc {
+ 0% {
+ width: 0;
+}
+ 100% {
+ width: 100%;
+}
+}
+@keyframes widthInc {
+ 0% {
+ width: 0;
+}
+ 100% {
+ width: 100%;
+}
+}

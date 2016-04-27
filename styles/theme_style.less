@@ -1,0 +1,533 @@
+
+/* ==============================================
+@Author: Inventive Templates
+@URL: http://inventivetemplates.com
+
+Styles contents are outlined below
+ 
+1. Initializing Theme Main Color & default styles
+2. Short Codes & Form Elements
+3. Bootstrap Navbar
+4. For One Page Menu
+5. Bootstrap Form Elements
+6. Features
+7. Features_2 & Features_3
+8. Counters
+9. Services
+10. Workprocess
+11. New & Blog
+12. Testimonials & Owl Carousel
+13. Gallery
+14. Team
+15. Subscribe
+16. Contact Us
+17. 404
+18. Shortcodes
+19. Pricing
+20. Footer
+21. Model Box
+22. Accordion
+23. back_to_top
+24. waypoints
+25. Buy_now
+26. Breadcrumb
+=============================================== */
+/* ==============================================================
+Initializing Theme Main Color & default styles
+============================================================== */
+@color: #f97575;
+.eff {
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.eff_slow {
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+::-webkit-selection {
+ background: @color;
+ text-shadow: none;
+ color:#FFF;
+}
+::-moz-selection {
+ background: @color;
+ text-shadow: none;
+ color:#FFF;
+}
+::selection {
+ background: @color;
+	text-shadow: none;
+	color: #FFF;
+}
+a, a:hover, a:focus {
+ color:@color;
+}
+/* ==============================================
+Short Codes & Form Elements
+=============================================== */
+.form-control:focus, .form-control:active {
+ border-color:@color;
+}
+.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus, .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+ .eff;
+ color:@color;
+}
+.pager li > a:hover, .pager li > a:focus {
+ .eff;
+	background: #222;
+ border-color:@color;
+}
+.nav-tabs > li i {
+ .eff;
+}
+.nav-tabs > li a:hover i, .nav-tabs > li.active a, .nav-tabs > li.active i {
+ .eff;
+ color:@color;
+}
+.nav-tabs > li.active a:hover, .nav-tabs > li.active a:focus, .nav-tabs > li a:hover, .nav-tabs > li a:focus {
+ .eff;
+ color:@color;
+}
+blockquote.style_2 {
+ border-left-color:fade(@color, 30%);
+}
+blockquote.blockquote-reverse.style_2 {
+ border-right-color:fade(@color, 30%);
+}
+.shortcode_sidebar a:hover {
+ color:@color;
+}
+/* ==============================================
+Bootstrap Navbar
+=============================================== */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover, .mega-menu li.active a {
+ .eff;
+ color:@color;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .dropdown-menu > li a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+ .eff;
+ color:@color;
+}
+.nav > li > a.active, .dropdown-menu > li > a.active, .dropdown-menu > li.active > a {
+ color:@color !important;
+}
+.navbar-nav > li.dropdown > .dropdown-menu li.dropdown:hover .dropdown-menu {
+ .eff;
+}
+.navbar-nav > li.dropdown li.dropdown:hover::before, .navbar-nav > li.dropdown li.dropdown::before {
+ .eff;
+}
+.navbar-nav > li.dropdown li.dropdown:hover > a, .navbar-nav > li.dropdown li.dropdown:hover > a::before {
+ color:@color;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background: #222;
+}
+.nav .dropdown-menu .open > a, .nav .dropdown-menu .open > a:focus, .nav .dropdown-menu .open > a:hover {
+	background: #222;
+}
+.navbar-default .dropdown-menu > li a:active, .navbar-default .dropdown-menu .dropdown-menu > li a:active {
+ color:@color;
+}
+.open_switcher {
+ color:@color;
+}
+/* ==============================================
+For One Page Menu
+=============================================== */
+.navbar-default .navbar-nav.one_page > .active > a {
+ color:@color !important;
+}
+.navbar-default .navbar-nav.one_page > li > a:focus {
+	color: #FFF;
+}
+.navbar-default .navbar-nav.one_page > .active > a:focus {
+ color:@color;
+}
+.heading a::before, .style_switcher, .search i {
+ .eff;
+}
+/* ==============================================
+Bootstrap Form Elements
+=============================================== */
+.bann_caption .btn-default {
+ background:@color;
+	color: #FFF;
+}
+.tooltip .tooltip-inner {
+ background:@color;
+}
+.tooltip.left > .tooltip-arrow {
+ border-left-color:@color;
+}
+.tooltip.right > .tooltip-arrow {
+ border-right-color:@color;
+}
+.tooltip.top > .tooltip-arrow {
+ border-top-color:@color;
+}
+.tooltip.bottom > .tooltip-arrow {
+ border-bottom-color:@color;
+}
+.popover {
+ border-color:@color;
+ background:@color;
+}
+.popover.left > .arrow::after {
+ border-left-color:@color;
+}
+.popover.right > .arrow::after {
+ border-right-color:@color;
+}
+.popover.top > .arrow::after {
+ border-top-color:@color;
+}
+.popover.bottom > .arrow::after {
+ border-bottom-color:@color;
+}
+.popover-content {
+ background:@color;
+	color: #FFF;
+}
+.bann_caption .btn-default:hover, .bann_caption .btn-default:focus {
+	background: #222;
+ color:@color;
+}
+.btn-default.style_3 {
+ .eff;
+ background:@color;
+ border:@color;
+}
+.btn-default.style_2:hover, .btn-default.style_2:focus, .btn-default.style_3:hover, .btn-default.style_3:focus {
+ color:@color;
+}
+.btn-default:hover, .btn-default:focus {
+ .eff;
+}
+.btn-default.style_2:hover, .btn-default.style_2:focus, .btn-default.style_2.is-checked {
+ .eff;
+ border-color:@color;
+ color:@color;
+	background: #222;
+}
+.btn-default.style_3 {
+ border:1px solid @color;
+ background:@color;
+}
+.btn-default.style_3:hover, .btn-default.style_3:focus {
+	background: #222;
+ color:@color;
+}
+/* ==============================================
+Features
+=============================================== */
+.features .icon {
+ .eff;
+ color:@color;
+}
+.features .block i {
+ .eff;
+}
+.features .block:hover i {
+ .eff;
+ color:@color;
+}
+/* ==============================================
+Features_2 & Features_3
+=============================================== */
+.features_2 .block, .features_3 .block, .features_2 .block::after, .features_3 .block::after, .features_2 .block:hover::after, .features_3 .block:hover::after {
+ .eff;
+}
+.features_2 .block:hover, .features_3 .block:hover {
+ .eff;
+ background:@color;
+}
+.features_2 .icon, .features_3 .icon {
+ .eff;
+ color:@color;
+}
+.features_2 .block:hover .icon, .features_2 .block:hover h3, .features_2 .block:hover p, .features_3 .block:hover .icon, .features_3 .block:hover h3, .features_3 .block:hover p {
+ .eff;
+	color: #FFF;
+}
+.features_2 .block:hover h3::before, .features_3 .block:hover h3::before {
+ .eff;
+	background: #FFF;
+}
+.features_2 .block:hover::after {
+ border-color:@color rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) rgba(250, 249, 249, 0);
+}
+.features_2 .block.style_2:hover::after {
+ border-color:rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) @color rgba(250, 249, 249, 0);
+}
+.features_3 .block:hover::after {
+ border-color: rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) @color;
+}
+.features_3 .block.style_2:hover::after {
+ border-color: rgba(250, 249, 249, 0) @color rgba(250, 249, 249, 0) rgba(250, 249, 249, 0);
+}
+/* ==============================================
+Counters
+=============================================== */
+.counters {
+ background:@color;
+}
+.counter {
+ color:@color;
+}
+.counters.style_2 .counter {
+ border:1px solid @color;
+}
+/* ==============================================
+Services
+=============================================== */
+.services > div {
+ .eff;
+}
+.services > div:hover {
+ .eff;
+	color: #222;
+ background:fade(@color, 80%);
+}
+.services > div a, .services > div p {
+ .eff;
+}
+.services > div:hover a, .services > div:hover a i, .services > div:hover p {
+ .eff;
+	color: #222;
+}
+.services > div i {
+ .eff;
+ color:@color;
+}
+/* ==============================================
+Workprocess
+=============================================== */
+.workprocess .block i, .workprocess .block:hover i, .workprocess .block h3, .workprocess .block:hover h3 {
+ .eff;
+}
+.workprocess .block:hover i {
+ background:@color;
+	color: #222;
+}
+.workprocess .container .icon:before, .workprocess .container-fluid .icon:before {
+ background:@color;
+}
+/* ==============================================
+New & Blog
+=============================================== */
+.news .block img, .news .block:hover img, .blog_items .block img, .blog_items .block:hover img, .blog_items .block ul li a {
+ .eff;
+}
+.blog_items .date li:nth-child(1) {
+ color:@color;
+}
+.blog_items .block ul li a:hover, .blog_items .block ul li i {
+ color:@color;
+}
+.blog_items .block .pic .popup-gallery, .blog_items .block .pic:hover .popup-gallery {
+ .eff;
+}
+.blog_items .block .pic .popup-gallery {
+ background: fade(@color, 50%);
+}
+.widget-body li a:hover, .side_bar.style_2 .widget-body li a:hover {
+ color:@color;
+}
+.widget-body li a, .widget-body li a:hover, .tags a, .tags a:hover {
+ .eff;
+}
+.categories li:hover {
+ border-color:@color;
+}
+.tags a:hover, .side_bar.style_2 .tags a:hover {
+ color:@color;
+ border-color:@color;
+	background: #222;
+}
+.comment > div a, .comment > div a:hover {
+ .eff;
+}
+.comment > div a:hover {
+ color:@color;
+}
+/* ==============================================
+Testimonials & Owl Carousel
+=============================================== */
+.testimonials h4 {
+ color:@color;
+}
+.owl-theme .owl-controls .owl-page span {
+ .eff;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+ border-color:@color;
+}
+.owl-theme .owl-controls .owl-buttons > div::before, .owl-theme .owl-controls .owl-buttons > div:hover::before {
+ .eff;
+}
+.owl-theme .owl-controls .owl-buttons > div.owl-prev:hover::before, .owl-theme .owl-controls .owl-buttons > div.owl-next:hover::before {
+ border-color:@color;
+ color:@color;
+	background: #222;
+}
+/* ==============================================
+Gallery
+=============================================== */
+.gallery_item div > .inner, .gallery_item div:hover > .inner {
+ .eff_slow;
+}
+.gallery_item div > .inner > div {
+ background: fade(@color, 50%);
+}
+.mfp-arrow-left::before, .mfp-arrow-left .mfp-b {
+ border-right-color:@color;
+}
+.mfp-arrow-right::before, .mfp-arrow-right .mfp-b {
+ border-left-color:@color;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+ color:@color;
+}
+/* ==============================================
+Team
+=============================================== */
+.team .block div .team-social {
+ .eff;
+}
+.team-social ul li i {
+ .eff;
+ background:@color;
+}
+.team-social ul li a:hover i {
+ .eff;
+ color:@color;
+	background: #222;
+}
+.team .block .details, .team .block:hover .details {
+ .eff;
+}
+.team .block:hover .details {
+ color:@color;
+}
+/* ==============================================
+Subscribe
+=============================================== */
+.subscribe input.form-control:focus, .subscribe input.form-control:active {
+ border-color:@color;
+}
+/* ==============================================
+Clients
+=============================================== */
+.clients {
+ background:@color;
+}
+.clients .item img, .clients .item a:hover img {
+ .eff;
+}
+/* ==============================================
+Contact Us
+=============================================== */
+.contact_info li a:hover {
+ color:@color;
+}
+/* ==============================================
+404
+=============================================== */
+.four_o_four_error_bg {
+ background:@color;
+}
+/* ==============================================
+Shortcodes
+=============================================== */
+.shortcodes .panel-default > .panel-heading, .s {
+ color: @color;
+}
+.shortcodes .panel-body pre span {
+}
+/* ==============================================
+ Pricing 
+=============================================== */
+.price_active .head {
+ background:@color;
+}
+/* ==============================================
+Footer
+=============================================== */
+footer h3 strong, footer:hover h3 strong {
+ .eff;
+}
+footer:hover h3 strong {
+ color:@color;
+}
+.social_icons a:hover i {
+ border-color:@color;
+ color:@color;
+	background: #222;
+}
+.foot_nav li a {
+ .eff;
+}
+.foot_nav li a:hover {
+ color:@color;
+}
+.foot_nav.style_2 li a:hover {
+ border-color:@color;
+}
+/* ==============================================
+Model Box
+=============================================== */
+.modal-header, .modal-content button.close {
+ color:@color;
+}
+/* ==============================================
+Accordion
+=============================================== */
+.panel-default > .panel-heading a:hover {
+ color:@color;
+}
+/* ==============================================
+back_to_top
+=============================================== */
+a.go-top i {
+ color:@color;
+}
+.go-top {
+ .eff;
+}
+.go-top i:hover, .go-top i:active, .go-top i:focus {
+ .eff;
+ color:@color;
+}
+/* ==============================================
+waypoints
+=============================================== */
+.skills .skill .progress-bar .current-progress .bar {
+ background: @color;
+}
+/* ==============================================
+Buy_now
+=============================================== */
+.buy_now {
+ background:@color;
+}
+.buy_now .btn-default {
+ .eff;
+ color:@color;
+	border: 1px solid #222;
+}
+.buy_now .btn-default:hover {
+ .eff;
+ background:@color;
+	color: #222;
+}
+/* ==============================================
+Breadcrumb
+=============================================== */
+.breadcrumb li a {
+ color:@color;
+}
