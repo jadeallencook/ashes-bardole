@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(function() {
 	"use strict";
 	
 	/* ==============================================
@@ -10,10 +10,16 @@ jQuery(document).ready(function($) {
 			if ($(this).scrollTop() > 110) {
 				$('.navbar.navbar-default').addClass('navbar-fixed-top');
 				$('.navbar.navbar-default').addClass('sticky');
+                $('.navbar-default').css({
+                    marginTop: '0px'
+                });
 				
 			} else {
 				$('.navbar.navbar-default').removeClass('navbar-fixed-top');
 				$('.navbar.navbar-default').removeClass('sticky');
+                $('.navbar-default').css({
+                    marginTop: '-40px'
+                });
 			}
 		});
 		
@@ -237,11 +243,7 @@ jQuery(document).ready(function($) {
 	/* ===============================================
      Adding Isotope Effect to Gird(Gallery) Items
      =============================================== */
-	$('.grid').isotope({
-		// options
-		itemSelector: '.gallery_item',
-		layoutMode: 'fitRows'
-	});
+
 	
 	/* ===============================================
      Initializing tooltips in shortcodes page
@@ -273,4 +275,4 @@ jQuery(document).ready(function($) {
 		$(this).tab('show');
 	});
 		
-})(jQuery);
+});

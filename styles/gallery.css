@@ -111,4 +111,7 @@
 .gallery_item h4{
 	font-size:14px;
 }
+.gallery_item div > img{
+	width:100%;
+}
 }

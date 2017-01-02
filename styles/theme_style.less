@@ -35,7 +35,7 @@ Styles contents are outlined below
 /* ==============================================================
 Initializing Theme Main Color & default styles
 ============================================================== */
-@color: #f97575;
+@color: #191919;
 .eff {
 	-moz-transition: all .3s ease;
 	-webkit-transition: all .3s ease;
@@ -110,7 +110,7 @@ Bootstrap Navbar
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .dropdown-menu > li a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
  .eff;
- color:@color;
+ color: #ccc;
 }
 .nav > li > a.active, .dropdown-menu > li > a.active, .dropdown-menu > li.active > a {
  color:@color !important;
@@ -239,37 +239,7 @@ Features
 /* ==============================================
 Features_2 & Features_3
 =============================================== */
-.features_2 .block, .features_3 .block, .features_2 .block::after, .features_3 .block::after, .features_2 .block:hover::after, .features_3 .block:hover::after {
- .eff;
-}
-.features_2 .block:hover, .features_3 .block:hover {
- .eff;
- background:@color;
-}
-.features_2 .icon, .features_3 .icon {
- .eff;
- color:@color;
-}
-.features_2 .block:hover .icon, .features_2 .block:hover h3, .features_2 .block:hover p, .features_3 .block:hover .icon, .features_3 .block:hover h3, .features_3 .block:hover p {
- .eff;
-	color: #FFF;
-}
-.features_2 .block:hover h3::before, .features_3 .block:hover h3::before {
- .eff;
-	background: #FFF;
-}
-.features_2 .block:hover::after {
- border-color:@color rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) rgba(250, 249, 249, 0);
-}
-.features_2 .block.style_2:hover::after {
- border-color:rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) @color rgba(250, 249, 249, 0);
-}
-.features_3 .block:hover::after {
- border-color: rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) rgba(250, 249, 249, 0) @color;
-}
-.features_3 .block.style_2:hover::after {
- border-color: rgba(250, 249, 249, 0) @color rgba(250, 249, 249, 0) rgba(250, 249, 249, 0);
-}
+
 /* ==============================================
 Counters
 =============================================== */
@@ -463,11 +433,6 @@ footer h3 strong, footer:hover h3 strong {
 }
 footer:hover h3 strong {
  color:@color;
-}
-.social_icons a:hover i {
- border-color:@color;
- color:@color;
-	background: #222;
 }
 .foot_nav li a {
  .eff;

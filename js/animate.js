@@ -10,7 +10,6 @@ var Core = {
 			this.initialized = true;
 
 			this.build();
-			this.events();
 
 	},
 

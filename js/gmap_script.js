@@ -2,10 +2,10 @@
 var gmap;
 gmap = new GMaps({
    el: '#map',
-   lat: 40.7765868,
-   lng: -111.9905243,
-   zoom: 10, 
-   zoomControl: true,
+   lat: 42.360857,
+   lng: -71.059076,
+   zoom: 15, 
+   zoomControl: false,
    scaleControl: false,
    scrollwheel: false,
    disableDoubleClickZoom: true,
