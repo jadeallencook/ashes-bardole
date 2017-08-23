@@ -135,7 +135,6 @@ h2 .fa {
 a#tattoo-signup-btn,
 a#buy-prints-btn {
     border: solid thin #fff;
-    color: #fff;
     font-size: 1em;
     font-weight: 100;
 }
@@ -2563,4 +2562,15 @@ Animations
     100% {
         transform: scale(1, 1) translate(0, 0);
     }
+}
+
+/* custom */ 
+
+div.block {
+    color: black;
+}
+
+div a div.block:hover {
+    color: #88CEAE;
+    opacity: 0.5;
 }
