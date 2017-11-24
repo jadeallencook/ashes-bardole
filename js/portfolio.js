@@ -3,8 +3,8 @@ $(function () {
     var $container = $('div#tumblr-feed');
     // get posts
     $.ajax({
-        url: 'http://api.tumblr.com/v2/blog/ashesbardoleart.tumblr.com/posts?api_key=Z5y5AQwoiAxdfcZPGPqK21jHRgUqGITOYu7o9QQf8R5CHNuKYw',
-        dataType: 'jsonp',
+        url: 'http://api.tumblr.com/v2/blog/ashesbardoleart.tumblr.com/posts?&api_key=Z5y5AQwoiAxdfcZPGPqK21jHRgUqGITOYu7o9QQf8R5CHNuKYw',
+        dataType: 'json',
         success: function (posts) {
             var posts = posts.response.posts;
 
