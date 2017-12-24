@@ -1,0 +1,14 @@
+a#header-logo { 
+    font-size: 35px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    white-space: nowrap;
+}
+
+/* mobile */
+
+@media (max-width: 666px) { 
+    a#header-logo {
+        font-size: 24px;
+    }
+}
