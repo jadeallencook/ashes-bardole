@@ -9,3 +9,4 @@
 <script src="js/waypoints.min.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="js/main.js"></script>
+<script src="js/instagram.js"></script>
