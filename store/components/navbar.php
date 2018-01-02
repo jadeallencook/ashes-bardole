@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6" style="padding: 0px">
                     <div class="logo">
-                        <a href="index.html" id="header-logo">
+                        <a href="../index.html" id="header-logo">
                                     ASHES BARDOLE
                                 </a>
                     </div>
